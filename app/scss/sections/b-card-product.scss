@@ -1,0 +1,34 @@
+.card-product__title {
+  color: #fff;
+  font-family: 'Neucha', cursive;
+  @include font(62px, 1.2);
+  margin-bottom: 10px;
+}
+
+.card-product__desc {
+  color: #fff;
+  @include font(15px, 1.4);
+  margin-bottom: 40px;
+}
+
+.card-product_recolored {
+
+  .card-product__title{
+    color: #2b2f5f;
+  }
+  .card-product__desc {
+    color: #747474;
+    margin: 0;
+  }
+}
+
+.card-product_recolored-production {
+
+  .card-product__title {
+    color: #393939;
+  }
+  .card-product__desc {
+    color: #883213;
+    margin: 0;
+  }
+}

@@ -1,0 +1,153 @@
+.intro {
+  background: linear-gradient(45deg, hsla(358,68%,55%,1) 48%,hsla(358,65%,45%,1) 67%,hsla(358,66%,44%,1) 100%);
+  padding-bottom: 120px;
+}
+
+.header {
+  padding: 25px 0 0 0;
+  @extend %clearfix;
+}
+
+.header__logo {
+  width: 287px;
+  float: left;
+  margin-right: 100px;
+}
+
+.header__nav {
+  width: 522px;
+  float: left;
+  margin: 25px 0 0 0;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__link {
+  color: #fff;
+  transition-duration: .2s;
+  &:hover {
+    color: #fca211;
+  }
+}
+
+.fa-angle-down {
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.header__search {
+  width: 104px;
+  float: right;
+  font-size: 0;
+  margin: 15px 0 0 0;
+}
+
+.icon {
+  display: inline-flex;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,.2);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon_margined {
+  margin-right: 22px;
+}
+
+.intro__wrap {
+  padding: 113px 0 0 0;
+  @extend %clearfix;
+  position: relative;
+}
+
+.intro__background-title {
+  position: absolute;
+  top: 37%;
+  font-family: 'Neucha', cursive;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: .3;
+  @include font(221px, 1);
+}
+
+.intro__ingredients {
+  width: 130px;
+  float: left;
+  position: relative;
+}
+
+.intro__ingredients-top {
+  text-align: center;
+  margin-bottom: 195px;
+}
+
+.intro__ingredients-outer {
+  width: 115px;
+}
+
+.intro__ingredients-title {
+  color: #fff;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+.intro__ingredients-term {
+  @include font(13px, 1.520769);
+  color: #fff;
+  opacity: .3;
+}
+
+.intro__ingredients-period {
+  @include font(24px, 1.696666);
+  color: #fff;
+  font-family: 'Neucha', cursive;
+}
+
+.intro__cake {
+  width: 80%;
+  float: right;
+  position: relative;
+}
+
+.intro__pic {
+  width: 400px;
+  float: left;
+  margin-top: -50px;
+}
+
+.intro__img {
+  max-width: 100%;
+  display: block;
+}
+
+.intro__card-product {
+  width: 47%;
+  float: right;
+}
+
+.intro__price {
+  color: #fff;
+  font-family: 'Neucha', cursive;
+  @include font(62px, 1.24);
+  display: inline-block;
+  margin-right: 47px;
+  vertical-align: middle;
+}
+
+.intro__btn {
+  border: none;
+  background-color: #fca211;
+  color: #a4151c;
+  @include font(14px, 0.92);
+  padding: 15px 23px;
+  border-radius: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}

@@ -1,0 +1,59 @@
+.footer__wrap {
+  @extend %clearfix;
+  padding: 24px 0 47px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 232px;
+  margin-right: 50px;
+  float: left;
+}
+
+.footer__info {
+  width: 49%;
+  float: left;
+}
+
+.footer__info-rights {
+  margin-right: 43px;
+}
+
+.footer__info-rights,
+.footer__info-address {
+  display: inline-block;
+  font-size: 14px;
+  color: #8d8d8d;
+}
+
+.footer__social {
+  width: 22%;
+  float: right;
+}
+
+.social {
+  text-align: right;
+}
+
+.social__item {
+  display: inline-block;
+  margin-right: 26px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+}
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 22px;
+}
+
+@each $social in fb, inst, tw {
+  .social__link_#{$social} {
+    background: url('../images/icons/#{$social}.png') 0 0 no-repeat;
+  }
+}

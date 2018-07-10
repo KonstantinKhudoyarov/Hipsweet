@@ -1,0 +1,69 @@
+.production {
+  padding: 100px 0 85px 0;
+  background: url('../images/patterns/pattern-production.png');
+  position: relative;
+  &::before {
+    content: "";
+    background-color: rgba(255,175,27,.9);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.production__title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.product__title-wrap {
+  width: 75%;
+  text-align: center;
+}
+
+.production__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.production__item {
+  width: 21%;
+  text-align: center;
+  margin-top: 75px;
+}
+
+.production__link {
+  display: block;
+}
+
+.production__pic {
+  height: 200px;
+}
+
+.production__item_positioned {
+
+  .production__pic {
+    position: relative;
+  }
+  .production__img {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    margin-left: -91.5px;
+  }
+}
+
+.production__item-title {
+  @include font(32px, 1.75);
+  font-family: 'Neucha', cursive;
+  color: #393939;
+}
+
+.production__text {
+  color: #ab594a;
+}
